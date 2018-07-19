@@ -1,3 +1,5 @@
+// 3 Play with CSV and object
+
 const csv = 
 `NAME, CATEGORY, PRICE
 Xiaomi Redmi 5A, Smartphone, 1199000

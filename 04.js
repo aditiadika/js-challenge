@@ -1,10 +1,11 @@
+// 4 Leap year detector
 // Create a function to detect a leap year. If I put 2018, the output will be false. 
 // But, if I put 2004, the output will be true.
 
-let year = 2018;
+let year = 2004;
 
 const lapYear = (year) => {
-    var result = false;
+    let result = false;
 
         if((year % 4) == 0 ){
             if((year % 100) != 0){

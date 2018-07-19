@@ -8,7 +8,6 @@ let result7 = 'JavaScript, TypeScript & Dart - Bahasa mana yang akan populer di 
 let result8 = 'lorem ipsum';
 let result9 = 'lorem ipsum';
 
-
 class Str {
 
     static lowerCase(input) {
@@ -37,11 +36,22 @@ class Str {
 
         return result;
     }
+
+    static randomString(len, charSet) {
+        charSet = charSet || 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+        var randomString = '';
+        for (var i = 0; i < len; i++) {
+            var randomPoz = Math.floor(Math.random() * charSet.length);
+            randomString += charSet.substring(randomPoz,randomPoz+1);
+        }
+        return randomString;
+    }
 }
 
 console.log("1- MAKAN - to lower case: "+Str.lowerCase(result1));
 console.log("2- malam - to upper case: "+Str.upperCase(result2));
 console.log("4- kasur - reverse to: "+Str.reverseWord(result4));
+console.log("6- create random: "+Str.randomString(3));
 console.log("7- JavaScript, TypeScript & Dart - Bahasa mana yang akan populer di 2018? - slug: "+Str.slug(result7));
 console.log("8- lorem ipsum - count to: "+Str.count(result8));
 console.log("9- lorem ipsum - count word to: "+Str.countWord(result9));
