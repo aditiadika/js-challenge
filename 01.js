@@ -1,0 +1,2 @@
+const str = "ibu ratna antar ubi";
+console.log(str.split(/\s/).reverse().join(" "));
